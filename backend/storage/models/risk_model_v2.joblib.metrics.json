@@ -1,0 +1,22 @@
+{
+  "dataset": "SYNTHETIC (generate_synthetic_data.py) -- not real fraud data",
+  "test": {
+    "n": 1200,
+    "accuracy": 0.9108333333333334,
+    "precision": 0.47058823529411764,
+    "recall": 0.07547169811320754,
+    "f1": 0.13008130081300814,
+    "roc_auc": 0.8073712531475286,
+    "confusion_matrix": [
+      [
+        1085,
+        9
+      ],
+      [
+        98,
+        8
+      ]
+    ]
+  },
+  "note": "Measures how well the model recovers the documented synthetic rule; NOT real-world fraud-detection performance."
+}

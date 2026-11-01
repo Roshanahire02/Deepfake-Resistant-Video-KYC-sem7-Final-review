@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+
+# Node
+node_modules/
+frontend/dist/
+
+# Secrets & local state
+.env
+*.db
+backend/server.log
+
+# Runtime data -- raw KYC video/uploads must never be committed
+backend/storage/uploads/*
+backend/storage/temp_video/*
+backend/uploads/
+
+# Trained checkpoints are large/derived: commit only the small risk models if you want them
+backend/storage/models/deepfake_effnet.pt
+backend/storage/models/gradcam/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Additional environment secrets
+.env.*
+!.env.example
+
+# SQLite database variations
+*.sqlite
+*.sqlite3
+
+# AI model weights and generated checkpoints
+*.onnx
+*.pt
+*.pth
+*.h5
+*.joblib
+
+# Python distribution and build files
+build/
+dist/
+*.egg-info/
+
+# Logs and temporary files
+*.log
+*.tmp
